@@ -1,0 +1,73 @@
+.order-resume-container {
+  display: flex;
+  flex-flow: column;
+  min-height: 300px;
+  height: auto;
+  max-width: 400px;
+  border: 1px solid grey;
+}
+
+.order-resume-header {
+  background-color: rgb(206, 206, 206);
+  min-height: 10px;
+  color: black;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.order-resume-item-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.order-resume-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 1rem;
+
+  &-image {
+    width: 40px;
+    height: 40px;
+    object-fit: center;
+  }
+
+  &-description {
+    color: grey;
+    text-transform: capitalize;
+    width: 50%;
+  }
+
+  &-price {
+    color: black;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+}
+
+.order-resume-button-container {
+  display: flex;
+  flex-flow: row-reverse;
+  padding: 0.625rem;
+}
+
+.order-resume-footer {
+  background-color: rgb(206, 206, 206);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  &-item {
+    display: flex;
+    flex-flow: column;
+    font-weight: bold;
+  }
+
+  &--second {
+    @extend .order-resume-footer;
+    background-color: black;
+    color: white;
+  }
+}

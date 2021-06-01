@@ -1,0 +1,56 @@
+.input-group {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-flow: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-inline: 1rem;
+
+  &-prepend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: auto;
+    padding: 0 1rem;
+  }
+
+  &-prepend-error {
+    background-color: red;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+
+  &-error {
+    border-color: red;
+  }
+
+  &-disabled {
+    background-color: lighten($color: rgb(219, 219, 219), $amount: 0.9);
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .input-group {
+    margin-inline: 0rem;
+  }
+}

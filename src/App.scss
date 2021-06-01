@@ -1,0 +1,56 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+body,
+html {
+  display: flex;
+  flex-flow: column;
+  min-height: 96vh;
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Helvetica";
+}
+
+.container {
+  padding: 1rem;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.main-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-black {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  font-size: 1rem;
+  &:hover {
+    background: black;
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.btn-red {
+  background-color: rgb(241, 53, 53);
+  color: white;
+  &:hover {
+    background: rgb(179, 1, 1);
+    transition: all 500ms ease-in-out;
+  }
+}
+
+.ml-2 {
+  margin-left: 1rem;
+}
